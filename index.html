@@ -1,1 +1,120 @@
-New Binary Page
+<html>
+  <title>Binary Numbers</title>
+  <head>
+    <style>
+      body
+      {
+        background-color: #444444;
+      }
+
+      input
+      {
+        height: 1.5em;
+        width: 1.5em;
+        font-size: 3em;
+      }
+
+      h1
+      {
+        text-align: center;
+        line-height: 1.5em;
+        color: #00FF29;
+      }
+
+      table
+      {
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+      }
+
+      td
+      {
+        padding: 10px;
+      }
+
+      td p
+      {
+        text-align: center;
+        font-size: 2em;
+        color: white;
+      }
+    </style>
+    <script>
+    var powersOfTwo = [1, 2, 4, 8, 16, 32];
+
+    function change(index) {
+      var buttonID = "button" + index;
+      var textID = "text" + index;
+      var button = document.getElementById(buttonID);
+      var added = document.getElementById(textID);
+      if (button.value == 0) {
+        button.value = "1";
+        added.innerHTML = powersOfTwo[index];
+      } else {
+        button.value = "0";
+        added.innerHTML = "0";
+      }
+      add();
+    }
+
+    function add() {
+      var sum = 0;
+      for (var i = 0; i < 6; i++) {
+        var id = "text" + i;
+        sum += parseInt(document.getElementById(id).innerHTML);
+      }
+      document.getElementById("total").innerHTML = sum;
+    }
+    </script>
+  </head>
+  <body>
+    <h1>Learn Binary by Clicking the Buttons Below!</h1>
+    <table id = "buttons">
+      <tr>
+        <td><input type = "button" onclick = "change(5)" value = "0" id = "button5"></input></td>
+        <td></td>
+        <td><input type = "button" onclick = "change(4)" value = "0" id = "button4"></input></td>
+        <td></td>
+        <td><input type = "button" onclick = "change(3)" value = "0" id = "button3"></input></td>
+        <td></td>
+        <td><input type = "button" onclick = "change(2)" value = "0" id = "button2"></input></td>
+        <td></td>
+        <td><input type = "button" onclick = "change(1)" value = "0" id = "button1"></input></td>
+        <td></td>
+        <td><input type = "button" onclick = "change(0)" value = "0" id = "button0"></input></td>
+      </tr>
+
+      <tr>
+        <td> <p> 2<sup>5</sup> </p> </td>
+        <td> </td>
+        <td> <p> 2<sup>4</sup> </p> </td>
+        <td> </td>
+        <td> <p> 2<sup>3</sup> </p> </td>
+        <td> </td>
+        <td> <p> 2<sup>2</sup> </p> </td>
+        <td> </td>
+        <td> <p> 2<sup>1</sup> </p> </td>
+        <td> </td>
+        <td> <p> 2<sup>0</sup> </p> </td>
+        <td> </td>
+      </tr>
+
+      <tr>
+        <td> <p id = "text5"> 0 </p></td>
+        <td> <p> + </p> </td>
+        <td> <p id = "text4"> 0 </p> </td>
+        <td> <p> + </p> </td>
+        <td> <p id = "text3"> 0 </p> </td>
+        <td> <p> + </p> </td>
+        <td> <p id = "text2"> 0 </p> </td>
+        <td> <p> + </p> </td>
+        <td> <p id = "text1"> 0 </p> </td>
+        <td> <p> + </p> </td>
+        <td> <p id = "text0"> 0 </p> </td>
+        <td> <p> = </p> </td>
+        <td> <p id = "total"> 0 </p> </td>
+      </tr>
+    </table>
+  </body>
+</html>
