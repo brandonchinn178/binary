@@ -1,4 +1,4 @@
-binary
-======
+Learning Binary Numbers
+=======================
 
-An HTML Script for learning the binary number system
+A website useful for teaching binary numbers to anyone.
