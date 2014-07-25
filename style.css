@@ -1,0 +1,132 @@
+@font-face
+{
+  font-family: "Masiode";
+  src: url(msdfont/msd_Light.ttf) format("truetype");
+}
+
+body
+{
+  color: white;
+  font-family: sans-serif;
+  background-color: #444444;
+}
+
+input
+{
+  height: 1.5em;
+  width: 1.5em;
+  font-size: 2.5em;
+  -webkit-appearance: none;
+}
+
+h1
+{
+  text-align: center;
+  line-height: 1.5em;
+  color: #00FF29;
+}
+
+#title
+{
+  position: fixed;
+  top: 10px;
+  width: 100%;
+}
+
+h2
+{
+  text-align: center;
+  line-height: 1.5em;
+  font-family: "Masiode";
+  font-size: 2em;
+}
+
+table
+{
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+td
+{
+  padding: 10px;
+}
+
+p
+{
+  text-align: center;
+  font-size: 1.5em;
+}
+
+#help
+{
+  margin: 0;
+  padding-top: .5em;
+  padding-left: 3.5em;
+  padding-right: 3.5em;
+  padding-bottom: 3.5em;
+  min-width: 600px;
+}
+
+#help p
+{
+  text-align: left;
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+#help .example
+{
+  text-align: center;
+  font-family: "Masiode";
+  font-size: 1.8em;
+  line-height: 1em;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+#total
+{
+  width: 3em;
+  font-size: 2.5em;
+}
+
+#binarynumber
+{
+  font-size: 1.65em;
+}
+
+#footer
+{
+  position: fixed;
+  bottom: 0px;
+  margin-left: -10px;
+  width: 100%;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#footer ul
+{
+  padding: 0px;
+  text-align: center;
+}
+
+#footer ul li
+{
+  display: inline;
+  padding: 5px;
+}
+
+a
+{
+  text-decoration: none;
+  color: white;
+}
+
+a:hover
+{
+  color: #00FF29;
+}
